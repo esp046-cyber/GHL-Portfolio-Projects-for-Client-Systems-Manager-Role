@@ -1,0 +1,175 @@
+
+<style>
+  .portfolio-wrap { padding: 1rem 0; }
+  .proj-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
+  .proj-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+  .proj-num { min-width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+  .proj-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px; }
+  .proj-subtitle { font-size: 12px; color: var(--color-text-secondary); margin: 0; }
+  .proj-desc { font-size: 13px; color: var(--color-text-secondary); line-height: 1.65; margin: 0 0 10px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); font-weight: 500; }
+  .tag-purple { background: #EEEDFE; color: #3C3489; }
+  .tag-teal { background: #E1F5EE; color: #085041; }
+  .tag-coral { background: #FAECE7; color: #712B13; }
+  .tag-blue { background: #E6F1FB; color: #0C447C; }
+  .tag-amber { background: #FAEEDA; color: #633806; }
+  .tag-green { background: #EAF3DE; color: #27500A; }
+  .num-purple { background: #EEEDFE; color: #3C3489; }
+  .num-teal { background: #E1F5EE; color: #085041; }
+  .num-coral { background: #FAECE7; color: #712B13; }
+  .num-blue { background: #E6F1FB; color: #0C447C; }
+  .num-amber { background: #FAEEDA; color: #633806; }
+  .num-green { background: #EAF3DE; color: #27500A; }
+  .num-pink { background: #FBEAF0; color: #72243E; }
+  .num-gray { background: #F1EFE8; color: #444441; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 10px 0; }
+</style>
+<div class="portfolio-wrap">
+  <h2 class="sr-only">GHL Portfolio Projects for Client Systems Manager Role</h2>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-num num-purple">01</div>
+      <div>
+        <p class="proj-title">End-to-End Lead Nurture System for a Real Estate Agency</p>
+        <p class="proj-subtitle">Full pipeline build · GHL · SMS + Email automation</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <p class="proj-desc">Designed and built a complete lead-to-close system inside GoHighLevel for a real estate client. This included a multi-step intake funnel, automatic lead tagging by source (Facebook Ads, Google, referral), and a 10-touch nurture sequence using email and SMS. Set up pipeline stages from New Lead → Contacted → Appointment Booked → Contract Sent → Closed. Configured round-robin assignment to agents and trigger-based follow-ups for no-shows. Reduced average response time from hours to under 5 minutes.</p>
+    <div class="tags">
+      <span class="tag tag-purple">GHL Pipelines</span>
+      <span class="tag tag-teal">SMS + Email Sequences</span>
+      <span class="tag tag-coral">Lead Tagging</span>
+      <span class="tag tag-blue">Round-Robin Assignment</span>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-num num-teal">02</div>
+      <div>
+        <p class="proj-title">Automated Onboarding System for a Coaching Business</p>
+        <p class="proj-subtitle">Workflow automation · Onboarding flow · Client experience</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <p class="proj-desc">Built a zero-touch onboarding pipeline for a high-ticket coaching client. Upon payment confirmation via Stripe, the system automatically sent a welcome email, triggered an SMS with next steps, added the client to the correct membership portal, assigned a success manager, and scheduled a kickoff call via Calendly integration. Eliminated manual onboarding tasks entirely and cut the average onboarding time from 3 days to under 2 hours.</p>
+    <div class="tags">
+      <span class="tag tag-teal">Stripe Integration</span>
+      <span class="tag tag-purple">GHL Workflows</span>
+      <span class="tag tag-green">Calendly Sync</span>
+      <span class="tag tag-blue">Membership Portal</span>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-num num-coral">03</div>
+      <div>
+        <p class="proj-title">Cold Outreach Engine with Multi-Channel Follow-Up Sequences</p>
+        <p class="proj-subtitle">Outbound system · Email + SMS + Voicemail drops</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <p class="proj-desc">Designed an outbound prospecting system for a B2B consulting client. Built structured cold email sequences in GHL with automatic follow-ups at days 1, 3, 7, and 14. Layered in SMS touchpoints and ringless voicemail drops. Connected the system to n8n to pull leads from a Google Sheet and inject them into the correct pipeline with proper tags. Set up reply detection to pause sequences automatically when a prospect responds, preventing awkward double-sends.</p>
+    <div class="tags">
+      <span class="tag tag-coral">Cold Email Sequences</span>
+      <span class="tag tag-amber">n8n Integration</span>
+      <span class="tag tag-teal">Voicemail Drops</span>
+      <span class="tag tag-blue">Reply Detection Logic</span>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-num num-blue">04</div>
+      <div>
+        <p class="proj-title">Appointment Booking & No-Show Recovery System</p>
+        <p class="proj-subtitle">Calendar automation · No-show workflows · Re-engagement</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <p class="proj-desc">Built a complete appointment management system for a med-spa client. Configured GHL calendar with custom availability rules, automated confirmation emails and SMS reminders at 24 hours and 1 hour before the appointment. Created a no-show workflow that triggered a re-booking sequence within 30 minutes of a missed appointment, with a limited-time offer to recover the slot. Also set up post-appointment review request automation. Increased show rates by streamlining reminders and cut manual follow-up time significantly.</p>
+    <div class="tags">
+      <span class="tag tag-blue">GHL Calendar</span>
+      <span class="tag tag-teal">Reminder Sequences</span>
+      <span class="tag tag-coral">No-Show Recovery</span>
+      <span class="tag tag-green">Review Automation</span>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-num num-amber">05</div>
+      <div>
+        <p class="proj-title">CRM Cleanup & Contact Segmentation Overhaul</p>
+        <p class="proj-subtitle">Data hygiene · Tagging strategy · Smart list setup</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <p class="proj-desc">Took over a GHL account with over 10,000 disorganized contacts, duplicate records, and inconsistent tagging. Audited the full database, removed duplicates, and designed a clean tagging taxonomy (lead source, funnel stage, interest category, temperature). Built smart lists and filters to segment contacts for targeted campaigns. Documented the tagging logic in a standard operating procedure so the internal team could maintain it consistently going forward. Gave the client full visibility into their database for the first time.</p>
+    <div class="tags">
+      <span class="tag tag-amber">CRM Audit</span>
+      <span class="tag tag-purple">Tag Taxonomy</span>
+      <span class="tag tag-teal">Smart Lists</span>
+      <span class="tag tag-blue">SOP Documentation</span>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-num num-green">06</div>
+      <div>
+        <p class="proj-title">Webhook-Powered Lead Distribution System via Make</p>
+        <p class="proj-subtitle">Make (Integromat) · Webhooks · Multi-account routing</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <p class="proj-desc">Built a lead routing system for an agency managing multiple client sub-accounts. When a new lead submitted a form on any of the client websites, a Make scenario captured the webhook, identified the lead source and service type, and routed the contact to the correct GHL sub-account with the right tags, pipeline stage, and assigned team member. Removed the need for manual lead distribution entirely and ensured zero leads fell through the cracks. Also set up Slack notifications to alert account managers in real time.</p>
+    <div class="tags">
+      <span class="tag tag-green">Make Scenarios</span>
+      <span class="tag tag-coral">Webhook Routing</span>
+      <span class="tag tag-blue">Multi-Sub-Account</span>
+      <span class="tag tag-amber">Slack Notifications</span>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-num num-pink">07</div>
+      <div>
+        <p class="proj-title">AI-Assisted Lead Response System Using GHL + GPT</p>
+        <p class="proj-subtitle">AI integration · Response automation · Conversation handling</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <p class="proj-desc">Integrated OpenAI into a GHL workflow to power AI-assisted first responses for inbound leads. When a new lead messaged through the website chat widget, the system triggered an n8n workflow that passed the lead's message and context (service interest, source) to GPT-4, generated a personalized reply, and sent it back through GHL within seconds. Built a fallback rule so conversations flagged as high-intent were handed off to a live agent immediately. Helped the client handle 3x more inbound volume without adding headcount.</p>
+    <div class="tags">
+      <span class="tag tag-purple">OpenAI / GPT</span>
+      <span class="tag tag-amber">n8n Automation</span>
+      <span class="tag tag-teal">GHL Chat Widget</span>
+      <span class="tag tag-coral">Human Handoff Logic</span>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-num num-gray">08</div>
+      <div>
+        <p class="proj-title">Reactivation Campaign System for Dormant Leads</p>
+        <p class="proj-subtitle">Re-engagement · Segmented campaigns · Pipeline recovery</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <p class="proj-desc">Designed a reactivation system targeting leads that had gone cold for 60+ days in a client's GHL account. Built a smart list to identify dormant contacts by last activity date and pipeline stage. Launched a 5-step re-engagement sequence mixing email and SMS with personalized messaging based on the lead's original interest. Contacts who engaged were automatically moved back into an active pipeline and flagged for follow-up. Contacts who remained unresponsive after the sequence were tagged as "unqualified" to keep the CRM clean. Recovered a meaningful percentage of previously lost leads within 30 days.</p>
+    <div class="tags">
+      <span class="tag tag-gray">Smart List Segmentation</span>
+      <span class="tag tag-teal">Re-engagement Sequences</span>
+      <span class="tag tag-blue">Pipeline Recovery</span>
+      <span class="tag tag-amber">Contact Lifecycle Logic</span>
+    </div>
+  </div>
+
+</div>
